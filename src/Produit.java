@@ -1,7 +1,21 @@
-public class Produit {
+import java.io.Serializable;
+
+public class Produit implements Serializable {
+    private static final long serialVersionUID = 1L;
     private static int compteurId=1;
     private int id;
     private String nom;
+
+    @Override
+    public String toString() {
+        return "Produit{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prix=" + prix +
+                ", qte=" + qte +
+                '}';
+    }
+
     private float prix;
     private int qte;
 
