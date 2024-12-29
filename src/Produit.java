@@ -25,6 +25,12 @@ public class Produit implements Serializable {
         this.prix = prix;
         this.qte=qte;
     }
+    public Produit(int id,String nom,float prix,int qte){
+        this.id = id;
+        this.nom = nom;
+        this.prix = prix;
+        this.qte =qte;
+    }
 
     public String getNom() {
         return nom;
